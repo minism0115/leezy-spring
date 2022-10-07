@@ -27,6 +27,11 @@ http://localhost:8080/swagger-ui/index.html
 ### 참고 사이트
 https://springdoc.org/
 
+## 실행환경 설정
+### 로컬 PC에서 실행
+Edit Configurations -> Build and run -> VM Option란에 '-Dspring.profiles.active=local' 이라고 적는다.
+(https://adg0609.tistory.com/m/61)
+
 ## H2 Database
 ### 실치 
 ```
