@@ -1,5 +1,6 @@
 package em.profile;
 
+import em.profile.domain.Profile;
 import em.profile.infrastructure.ProfileRepository;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -17,7 +18,6 @@ public class ProfileDataInitializer implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
-/*        
         Profile profile = Profile.builder()
                 .korName("장원영")
                 .engName("Jang Wonyoung")
@@ -61,6 +61,5 @@ public class ProfileDataInitializer implements ApplicationRunner {
                 .mbti("ISFP")
                 .build();
         profileRepository.save(profile);
-*/        
     }
 }

@@ -14,6 +14,8 @@
 ## Swagger
 ### 설치
 ```
+build.gradle 파일에 다음 라인 추가
+
 dependencies {
   ...
   implementation 'org.springdoc:springdoc-openapi-ui:1.6.11'
@@ -25,3 +27,16 @@ http://localhost:8080/swagger-ui/index.html
 ### 참고 사이트
 https://springdoc.org/
 
+## H2 Database
+### 실치 
+```
+build.gradle 파일에 다음 라인 추가
+
+dependencies {
+  ...
+	runtimeOnly 'com.h2database:h2'
+  ...
+}  
+```
+### H2 Console Page
+http://localhost:8080/h2-console
