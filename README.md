@@ -48,7 +48,7 @@ dependencies {
 ### H2 Console Page
 http://localhost:8080/h2-console
 
-### Rest Repositories & HAL Explorer
+## Rest Repositories & HAL Explorer
 ### 설치
 ```
 build.gradle 파일에 다음 라인 추가
@@ -60,3 +60,5 @@ dependencies {
   ...
 }  
 ```
+### HAL Explorer Page
+http://localhost:8080/api
