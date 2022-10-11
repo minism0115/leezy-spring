@@ -10,6 +10,8 @@
     - MySQL Driver`com.oracle.database.jdbc:ojdbc8`
     - Oracle Driver`mysql:mysql-connector-java`
 - Spring REST Docs`spring-restdocs-mockmvc`
+- Rest Repositories`spring-boot-starter-data-rest`
+- Rest Repositories HAL Explorer`spring-data-rest-hal-explorer`
 
 ## Swagger
 ### 설치
@@ -45,3 +47,16 @@ dependencies {
 ```
 ### H2 Console Page
 http://localhost:8080/h2-console
+
+### Rest Repositories & HAL Explorer
+### 설치
+```
+build.gradle 파일에 다음 라인 추가
+
+dependencies {
+  ...
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+    implementation 'org.springframework.data:spring-data-rest-hal-explorer'
+  ...
+}  
+```
