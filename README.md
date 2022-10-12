@@ -66,3 +66,14 @@ dependencies {
 ```
 ### HAL Explorer Page
 http://localhost:8080/api
+
+## Spring Configuration Processor
+Generate metadata for developers to offer contextual help and "code completion" when working with custom configuration keys (ex.application.properties/.yml files).
+### 설치
+```
+dependencies {
+  ...
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+  ...
+}
+```
