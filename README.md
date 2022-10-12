@@ -13,6 +13,10 @@
 - Rest Repositories`spring-boot-starter-data-rest`
 - Rest Repositories HAL Explorer`spring-data-rest-hal-explorer`
 
+## Spring Boot DevTools
+### LiveReload 추가
+- Chrome Extension
+
 ## Swagger
 ### 설치
 ```
