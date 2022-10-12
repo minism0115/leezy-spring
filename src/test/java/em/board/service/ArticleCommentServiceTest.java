@@ -2,9 +2,11 @@ package em.board.service;
 
 import em.board.domain.Article;
 import em.board.domain.ArticleComment;
+import em.board.domain.UserAccount;
 import em.board.dto.ArticleCommentDto;
 import em.board.repository.ArticleCommentRepository;
 import em.board.repository.ArticleRepository;
+import em.board.repository.UserAccountRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -29,14 +31,17 @@ class ArticleCommentServiceTest {
 
     @Mock private ArticleRepository articleRepository;
     @Mock private ArticleCommentRepository articleCommentRepository;
+    @Mock private UserAccountRepository userAccountRepository;
+
 
     @DisplayName("게시글 ID로 조회하면, 해당하는 댓글 리스트를 반환한다.")
     @Test
     void givenArticleId_whenSearchingArticleComments_thenReturnsArticleComments() {
         // Given
         Long articleId = 1L;
+        UserAccount userAccount = userAccountRepository.save(UserAccount.of("uno", "pw", null, null, null));
         given(articleRepository.findById(articleId)).willReturn(Optional.of(
-                Article.of("title", "content", "#java"))
+                Article.of(userAccount, "title", "content", "#java"))
         );
 
         // When
