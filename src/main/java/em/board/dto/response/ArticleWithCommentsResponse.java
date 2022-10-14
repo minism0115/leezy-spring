@@ -18,7 +18,7 @@ public class ArticleWithCommentsResponse implements Serializable {
     private final LocalDateTime createdAt;
     private final String email;
     private final String nickname;
-    private final Set<ArticleCommentResponse> articleCommentsResponses;
+    private final Set<ArticleCommentResponse> articleCommentsResponse;
 
     public static ArticleWithCommentsResponse of(Long id, String title, String content, String hashtag, LocalDateTime createdAt, String email, String nickname, Set<ArticleCommentResponse> articleCommentResponses) {
         return new ArticleWithCommentsResponse(id, title, content, hashtag, createdAt, email, nickname, articleCommentResponses);
