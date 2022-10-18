@@ -102,3 +102,10 @@ dependencies {
   ...
 }
 ```
+
+## Heroku
+### Heroku CLI 설치
+- https://devcenter.heroku.com/articles/getting-started-with-java#set-up
+
+### 데모 페이지
+*  https://leezy-spring-app.herokuapp.com/
