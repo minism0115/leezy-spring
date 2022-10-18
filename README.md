@@ -1,7 +1,12 @@
 # leezy-spring
+## 개발 환경
+- Intellij IDEA 02022.2.2
+- Java 11
+- Gradle 7.5
+- Spring Boot 2.6.12
 
-## Maven Libraries
-### 기본
+## 기술 세부 스택
+### Spring Boot
 - Spring Web`spring-boot-starter-web`
 - Spring Boot DevTools`spring-boot-devtools`
 - Lombok`lombok`
@@ -12,7 +17,14 @@
 - Spring REST Docs`spring-restdocs-mockmvc`
 - Rest Repositories`spring-boot-starter-data-rest`
 - Rest Repositories HAL Explorer`spring-data-rest-hal-explorer`
-- Spring Security'
+- Spring Security`spring-boot-starter-security`
+- Spring Configuration Processor`spring-boot-configuration-processor`
+- Thymeleaf`spring-boot-starter-thymeleaf`
+
+### 그외 
+- QueryDSL 
+- Bootstrap 5.2.0
+- Heroku
 
 ## Spring Boot DevTools
 ### LiveReload 추가
