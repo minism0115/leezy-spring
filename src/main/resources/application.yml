@@ -1,11 +1,9 @@
 spring:
-  profiles:
-    active: dev
+  profiles.active: dev
 ---
 spring:
-  profiles:
-    active: prod
+  profiles.active: local
 ---
 spring:
-  profiles:
-    active: local
+  profiles.active: prod
+
