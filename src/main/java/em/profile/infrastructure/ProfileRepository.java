@@ -12,7 +12,5 @@ public interface ProfileRepository extends JpaRepository<Profile, Long> {
 
     Optional<Profile> findById(Long id);
 
-    Profile save(Profile profile);
-
     void delete(Profile profile);
 }
