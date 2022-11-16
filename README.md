@@ -21,6 +21,12 @@
 - Spring Configuration Processor`spring-boot-configuration-processor`
 - Thymeleaf`spring-boot-starter-thymeleaf`
 
+## Intellij에서 Java 11 설치
+- File - Settings - Build, Execution, Deployment - Build Tools - Gradle
+- Gradle projects - Gradle - Gradle JVM - Download JDK 선택
+- Version: 11, Vendor: Amazon Corretto 선택 후 Download 버튼 클릭
+- OK 버튼 클릭으로 적용
+
 ### 그외 
 - QueryDSL 
 - Bootstrap 5.2.0
